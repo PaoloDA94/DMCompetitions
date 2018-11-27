@@ -782,7 +782,10 @@ resamples = resamples(model_list)
 
 # Write Predictions of Test Datset into csv file
 yhat1 = exp( predict(model_xgb, newdata=ames_testData) )
-write.table(file='mySubmission4.txt', yhat1, row.names = FALSE, col.names = FALSE)</code></pre>
+write.table(file='mySubmission4.txt', yhat1, row.names = FALSE, col.names = FALSE)
+
+head(yhat1)</code></pre>
+<pre><code>[1] 179314.6 234340.7 187701.2 208815.7 166939.0 187746.2</code></pre>
 </div>
 <div id="lesson-learnt" class="section level3">
 <h3>Lesson Learnt:</h3>

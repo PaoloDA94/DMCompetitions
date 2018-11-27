@@ -290,7 +290,11 @@ fit1 &lt;- randomForest(count ~ .,
                      importance = TRUE,
                      ntree = 250)
 pred1 = predict(fit1, test)
-write.table(file='mybike1.txt', expm1(pred1), row.names = FALSE, col.names = FALSE)</code></pre>
+write.table(file='mybike1.txt', expm1(pred1), row.names = FALSE, col.names = FALSE)
+
+head(pred1)</code></pre>
+<pre><code>   10887    10888    10889    10890    10891    10892 
+2.341330 1.828926 1.593747 1.373362 1.297867 1.681324 </code></pre>
 </div>
 <div id="lesson-learnt" class="section level3">
 <h3>Lesson Learnt:</h3>

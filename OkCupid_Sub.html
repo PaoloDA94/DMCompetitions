@@ -170,7 +170,16 @@ fit.rcv &lt;- caret::train(Class ~ ., data = train,
                          metric = &quot;ROC&quot;,
                          trControl = ctrl2)
 phat.rcv = predict(fit.rcv, newdata=test, type = &quot;prob&quot;)[,&quot;stem&quot;,drop=F]
-write.table(file=&quot;myokcupid.rcv.txt&quot;, phat.rcv, row.names = FALSE, col.names = FALSE)</code></pre>
+write.table(file=&quot;myokcupid.rcv.txt&quot;, phat.rcv, row.names = FALSE, col.names = FALSE)
+
+head(phat.rcv)</code></pre>
+<pre><code>             stem
+4001 5.979742e-01
+4002 6.554974e-01
+4003 1.095242e-01
+4004 7.216677e-03
+4005 1.102956e-07
+4006 1.866487e-08</code></pre>
 </div>
 <div id="lesson-learnt" class="section level3">
 <h3>Lesson Learnt:</h3>
